@@ -52,11 +52,11 @@ def tabuada(num1):
         tab = num1 * cont
         print(f"{num1} * {cont} = tab")
 
-resp = int(input("Escolha: \n1 - Adição\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Exponenciação\n6 - Resto de Divisão\n7 - Par e Impar\n8 - Primos\n9 - Fatorial\n10 - Tabuada\n0 - Sair \nEscolha sua operação: "))
-n1 = int(input("N1: "))
-n2 = int(input("N2: "))
-
 while True:
+    resp = int(input("Escolha: \n1 - Adição\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Exponenciação\n6 - Resto de Divisão\n7 - Par e Impar\n8 - Primos\n9 - Fatorial\n10 - Tabuada\n0 - Sair \nEscolha sua operação: "))
+    n1 = int(input("N1: "))
+    n2 = int(input("N2: "))
+
     if resp == 1:
         res = soma(n1,n2)
         print(f"Soma: {res}")
@@ -118,4 +118,4 @@ while True:
         print("Escolheu continuar")
     else:
         print("Sair")
-    break
+        break
