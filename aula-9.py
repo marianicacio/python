@@ -2,7 +2,7 @@
 import random
 
 #definir o tamanho da matriz
-TAM = 3
+TAM = 100
 
 #definido um laço para a matriz que
 #intera TAM vezes
@@ -15,6 +15,18 @@ def soma():
     for lin in range(TAM):
         for col in range(TAM):
            mat3[lin][col] = mat1[lin][col] + mat2[lin][col]
+
+#Função de subtração
+def sub():
+    for lin in range(TAM):
+        for col in range(TAM):
+           mat3[lin][col] = mat1[lin][col] - mat2[lin][col]
+
+#Função de multiplicação
+def mult():
+    for lin in range(TAM):
+        for col in range(TAM):
+           mat3[lin][col] = mat1[lin][col] * mat2[lin][col]
 
 #preenchendo a matriz com numeros aleatorios
 for lin in range(TAM):
@@ -30,7 +42,19 @@ print("Matriz 2: ")
 for linha in mat2:
     print(linha)
 
-print("Matriz 3: ")
+resp = input("Escolha a operação: +")
+
+print("Matriz Soma ")
 soma()
+for cont in mat3:
+    print(cont)
+
+print("Matriz Subtração ")
+sub()
+for cont in mat3:
+    print(cont)
+
+print("Matriz Multiplicação")
+mult()
 for cont in mat3:
     print(cont)
